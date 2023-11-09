@@ -60,5 +60,5 @@ jobs:
           app-name: 'msdocs-core-sql-tutorial-ks'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B3CDDAA6A41B428593AAAA680A4DB946 }}
-          
+          #publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B3CDDAA6A41B428593AAAA680A4DB946 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
