@@ -53,8 +53,9 @@ jobs:
         with:
           name: .net-app
 
-      - name: 'Login via Azure CLI'uses: azure/login@v1with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: 'Login via Azure CLI'
+        uses: azure/login@v1with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
